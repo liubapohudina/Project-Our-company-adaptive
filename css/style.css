@@ -24,7 +24,7 @@ body {
 .container {
     margin: 0 auto;
     padding: 0 0;
-    width: 1110px;
+    max-width: 1110px;
 }
 img {
     display: block;
@@ -37,7 +37,7 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    width: 1920px;
+    max-width: 1920px;
 }
 
 .header {
@@ -71,8 +71,8 @@ justify-content: flex-end;
 
 
 .section-first  {
-    padding-top: 220px;
-    padding-bottom: 335px;
+    padding-top: 150px;
+    padding-bottom: 200px;
 }
 .section-first-text {
     color: var(--color-text-white);
@@ -87,10 +87,13 @@ margin-bottom: 20px;
     color: var(--color-text-white);
 text-align: center;
 font-family: inherit;
-font-size: 48px;
-font-weight: 800;
-line-height: 1.34;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.11;
 margin-bottom: 50px;
+max-width: 300px;
+margin-left: auto;
+margin-right: auto;
 }
  .button {
     color: var(--color-text-white);
