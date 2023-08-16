@@ -1,5 +1,62 @@
 @media screen and (min-width: 428px) {
-     .container {
+     .container,
+     .section-first .container {
         max-width: 428px;
+    }
+}
+/*----------------tablet-------------*/
+@media screen and (min-width: 768px) {
+    .container,
+    .section-first .container,
+    .header .container {
+        max-width: 768px;
+    }
+    .header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .header .nav {
+        display: flex;
+        gap: 39px;
+        padding: 40px 0;
+        justify-content: center;
+    }
+    .header .container .nav .link {
+        display: flex;
+        color: var(--color-text-white);
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-weight: 500;
+        transform: scale(1);
+        transition: color 270ms linear, transform 270px linear;
+    }
+    .header .nav .link:hover,
+    .header .nav .link:focus {
+        transform: scale(1.15);
+    }
+    .menu-btn {
+        display: none;
+    }
+    .navigation .current {
+        position: relative;
+    }
+    .current::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #ffff;
+        bottom: -55px;
+    }
+}
+
+/*----------------desctop------------*/
+@media  screen and (min-width: 1158px) {
+    .container,
+    .section-first .container {
+        max-width: 1920px;
+    }
+    .header .nav {
+        justify-content: flex-end;
     }
 }
