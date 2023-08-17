@@ -4,6 +4,18 @@
         max-width: 428px;
     }
 }
+@media screen and (max-width: 428px) {
+    .section-services-title {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: unset;
+    }
+    .section-services .list {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+}
 /*----------------tablet-------------*/
 @media screen and (min-width: 768px) {
     .container,

@@ -221,6 +221,7 @@ font-family: inherit;
 font-size: 18px;
 font-weight: 600;
 line-height: normal;
+align-self: center;
 }
 .list .section-services-text {
     color: var(--color-text-grey);
@@ -237,7 +238,7 @@ line-height: 1.6;
     margin-bottom: 55px;
     justify-content: center;
     align-items: center;
-   
+    padding-left: 0;
 }
 .section-services .list .item {
     display: flex;
