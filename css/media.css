@@ -2,11 +2,13 @@
      .container,
      .section-first .container {
         max-width: 428px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
+   
 }
 @media screen and (max-width: 428px) {
     .section-services-title {
-        font-weight: 300;
         font-size: 25px;
         line-height: unset;
     }
@@ -14,6 +16,15 @@
         flex-direction: column;
         margin: 0 auto;
     }
+    .section-about-us-title {
+        font-size: 25px;
+    }
+    .section-all-services .list li:last-child {
+        display: none;
+    }
+   .input {
+    width: 110px;
+   }
     
 }
 /*----------------tablet-------------*/
@@ -40,11 +51,11 @@
         font-size: 16px;
         font-weight: 500;
         transform: scale(1);
-        transition: color 270ms linear, transform 270px linear;
+        transition: color 270ms linear;
     }
     .header .nav .link:hover,
     .header .nav .link:focus {
-        transform: scale(1.15);
+        color: rgb(82, 101, 210);
     }
     .menu-btn {
         display: none;
@@ -52,23 +63,85 @@
     .navigation .current {
         position: relative;
     }
+    .current {
+        color: rgb(82, 101, 210);
+    }
     .current::after {
         content: "";
         position: absolute;
         width: 100%;
         height: 3px;
-        background-color: #ffff;
+        background-color: rgb(82, 101, 210);
         bottom: -55px;
     }
+    .section-first-title {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 1.3;
+        max-width: 700px;
+    }
+    .section-about-us .item-right {
+        display: block;
+    }
+    .video-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    .navigation-footer {
+        flex-direction: unset;
+
+    }
+    
 }
 
 /*----------------desctop------------*/
+
 @media  screen and (min-width: 1158px) {
     .container,
-    .section-first .container {
-        max-width: 1920px;
+    .section-first .container
+    .heder .container {
+        max-width: 1114px;
     }
     .header .nav {
         justify-content: flex-end;
     }
+    .section-first-title {
+        max-width: 815px;
+        font-size: 48px;
+    }
+    .section-all-services .container {
+        padding-top: 100px;
+        margin-bottom: 135px;
+    }
+    .all-services-button {
+        display: flex;
+        gap: 370px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section-all-services-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.5;
+        max-width: 540px;
+    }
+    .background-video-play {
+    
+        border-radius: 10px;
+        background-image: url(../images/backg-button-depositphotos-bgremover.png);
+        background-size: cover;
+        position: absolute;
+        top: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 430px;
+        min-width: 970px;
+        border-radius: 10px;
+        border-radius: 10px;
+        outline: none;
+        }
+    
+   
 }
