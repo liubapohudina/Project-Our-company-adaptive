@@ -142,6 +142,13 @@
         border-radius: 10px;
         outline: none;
         }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .background-video-play {
+                background-image: url(../images/backg-button-depositphotos-bgremover-2x.jpg);
+            }
+        }
     
    
 }

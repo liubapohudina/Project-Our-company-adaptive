@@ -39,7 +39,14 @@ img {
     background-size: cover;
     max-width: 1920px;
 }
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .background {
+        background-image: (0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+            url(../images/backg-button-depositphotos-bgremover-2x.jpg);
+    }
+}
 .header {
 border-bottom: 1px solid rgba(161, 161, 161, 0.5);
 padding-top: 25px;
@@ -432,6 +439,15 @@ margin-right: auto;
     max-height: 570px;
     margin-bottom: 165px;
 }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .video {
+        background-image: url(../images/img-backg-services-2x.jpg);
+    }
+}
+    
+
 .video .container {
     padding-top: 70px;
     padding-bottom: 420px;
