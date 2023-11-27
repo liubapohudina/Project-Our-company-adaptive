@@ -10,8 +10,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    <div  class="row" id="myBtn">
+        <svg  width="40" height="40">
+            <use  href="./images/icons.svg#icon-arrow-up2"></use></svg>
+    </div>
     <div class="background">
     <header class="header" id="main_page">
         <div class="container">
@@ -34,6 +41,7 @@
     </div>
 </header>
 <main>
+    
         <section class="section-first">
             <div class="container">
             <p class="section-first-text">Передова IT студія</p>
@@ -318,10 +326,12 @@
         </nav>
         </div>
     </div>
+  
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/scrollBtn.js"></script>
 </body>
 </html>
 
