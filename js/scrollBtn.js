@@ -18,7 +18,7 @@ function topFunction() {
          anime({
                  targets: [document.documentElement, document.body],
                 scrollTop: 0,
-                duration: 1800,
+                duration: 2500,
                 easing: 'easeInOutQuad'
            });
    
