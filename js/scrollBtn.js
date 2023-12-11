@@ -1,26 +1,26 @@
 
-let mybutton = document.getElementById("myBtn");
-mybutton.addEventListener('click', topFunction)
 
 
-window.onscroll = function() {scrollFunction()};
+ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
+      scrollToTopButton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    scrollToTopButton.style.display = "none";
   }
 }
 
 
-function topFunction() {
-         anime({
-                 targets: [document.documentElement, document.body],
-                scrollTop: 0,
-                duration: 2500,
-                easing: 'easeInOutQuad'
-           });
-   
- }
+function scrollToTop() {
+  const scrollToTopButton = document.getElementById('myBtn'); 
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+const scrollToTopButton = document.getElementById('myBtn');
+console.log(scrollToTopButton)
+scrollToTopButton.addEventListener('click', scrollToTop);
 
